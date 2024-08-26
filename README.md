@@ -1,6 +1,10 @@
 # Challenge-9
 Node.js Challenge: Professional README Generator
 
+Demo>>>>> 
+
+Github Repo>>>> https://github.com/vmarorti/Challenge-9
+
 Your task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer packageLinks to an external site.
 
 GIVEN a command-line application that accepts user input
@@ -18,3 +22,7 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
+
+The application will be invoked by using the following command:
+
+node index.js
