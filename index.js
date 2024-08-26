@@ -5,7 +5,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        message: "Enter your Title",
+        message: "Enter a Title",
         name: "title",
         validate: title => {
             if (title) {
@@ -17,7 +17,7 @@ const questions = [
         }
     },
     {
-        message: "Enter your Description",
+        message: "Enter a Description",
         name: "description",
         validate: description => {
             if (description) {
@@ -29,25 +29,25 @@ const questions = [
         }
     },
     {
-        message: "Enter your Installation instructions",
+        message: "Enter the Installation instructions",
         name: "install",
         validate: install => {
             if (install) {
                 return true;
             } else {
-                console.log('You must enter an install.');
+                console.log('You must enter the installation instructions.');
                 return false;
             }
         }
     },
     {
-        message: "Enter your intended Usage content",
+        message: "Enter your intended usage",
         name: "usage",
         validate: usage => {
             if (usage) {
                 return true;
             } else {
-                console.log('You must enter a usage.');
+                console.log('You must enter your intended usage.');
                 return false;
             }
         }
@@ -61,19 +61,19 @@ const questions = [
             if (license) {
                 return true;
             } else {
-                console.log('You must enter a license.');
+                console.log('You must choose a license from the list.');
                 return false;
             }
         }
     },
     {
-        message: "Enter your Contribution credits",
+        message: "Enter your contribution credits",
         name: "contributing",
         validate: contributing => {
             if (contributing) {
                 return true;
             } else {
-                console.log('You must enter contribution credits.');
+                console.log('You must enter your contribution credits.');
                 return false;
             }
         }
@@ -85,7 +85,7 @@ const questions = [
             if (test) {
                 return true;
             } else {
-                console.log('You must enter a test.');
+                console.log('You must enter a test description.');
                 return false;
             }
         }
