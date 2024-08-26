@@ -68,7 +68,7 @@ const questions = [
     },
     {
         message: "Enter your contribution credits",
-        name: "contributions",
+        name: "Contributing",
         validate: contributing => {
             if (contributing) {
                 return true;
@@ -80,7 +80,7 @@ const questions = [
     },
     {
         message: "Enter your test descriptions",
-        name: "Test",
+        name: "test",
         validate: test => {
             if (test) {
                 return true;
