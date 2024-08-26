@@ -41,7 +41,7 @@ const questions = [
         }
     },
     {
-        message: "Enter your Usage content",
+        message: "Enter your intended Usage content",
         name: "usage",
         validate: usage => {
             if (usage) {
@@ -73,14 +73,14 @@ const questions = [
             if (contributing) {
                 return true;
             } else {
-                console.log('You must enter a contributing.');
+                console.log('You must enter contribution credits.');
                 return false;
             }
         }
     },
     {
         message: "Enter your test descriptions",
-        name: "test",
+        name: "Test",
         validate: test => {
             if (test) {
                 return true;
@@ -91,13 +91,13 @@ const questions = [
         }
     },
     {
-        message: "Provide your GitHub username",
+        message: "Enter your GitHub username",
         name: "questions",
         validate: questions => {
             if (questions) {
                 return true;
             } else {
-                console.log('You must enter a username.');
+                console.log('You must enter your Github username.');
                 return false;
             }
         }
@@ -106,7 +106,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data) , (err) => {
-        err ? console.log(err) : console.log('ReadMe has been created!')
+        err ? console.log(err) : console.log('ReadMe.md has been created!')
     });
 
 };
@@ -115,7 +115,7 @@ function init() {
     inquirer
         .prompt(questions)
             .then((data) => {
-                const fileName = "README(test).md";
+                const fileName = "README(My test).md";
                 writeToFile(fileName, data);
             })
 };
