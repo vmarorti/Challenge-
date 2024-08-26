@@ -68,7 +68,7 @@ const questions = [
     },
     {
         message: "Enter your contribution credits",
-        name: "contributing",
+        name: "contributions",
         validate: contributing => {
             if (contributing) {
                 return true;
